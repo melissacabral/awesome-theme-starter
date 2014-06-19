@@ -739,6 +739,14 @@ footer#colophon .widget ul li {
 	margin: 0 1em 1em 0;
 	position:relative;
 }
+.alignleft{
+	float:left;
+	margin-right:1em;
+}
+.alignright{
+	float:right;
+	margin-left:1em;
+}
 /*
 TODO: Add required WP styles
 http://codex.wordpress.org/CSS
