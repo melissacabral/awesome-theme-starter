@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 <body>	
+	<div id="wrapper">
 	<header role="banner">
 		<div class="top-bar clearfix">
 			<h1 class="site-name">
