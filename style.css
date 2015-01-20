@@ -189,7 +189,9 @@ header nav ul li .children li a  {
 /*
 ==Search Bar (top)
 */
-header[role=banner] .search-form{
+header[role=banner] .search-form,
+header[role=banner] .searchform
+{
 	position: absolute;
 	top:3em;
 	right:0;
@@ -292,13 +294,14 @@ header[role=banner] .search-form{
 /*
 ==Search Form
 */
-.search-form div {
+.search-form div{
 	font-size: 22px;   
 	border-radius: 1em;
 	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif ;
 	border-width: 0;
 }
-.search-form input {
+.search-form input,
+.searchform input {
 	font-size: inherit;
 	padding: 0.3em 1%;
 	margin:0;
@@ -310,7 +313,8 @@ header[role=banner] .search-form{
 	vertical-align: middle;
 	line-height: 40px;
 }
-.search-form input.search-field {	
+.search-form input.search-field,
+.searchform input#s {	
 	width:70%;
 	-moz-border-radius-topleft: 4px;
 	-moz-border-radius-topright: 0px;
@@ -322,7 +326,8 @@ header[role=banner] .search-form{
 .widget .search-form input.search-field{
 	width:60%;
 }
-.search-form input[type=submit] {
+.search-form input[type=submit],
+.searchform #searchsubmit {
 	margin-left:-4px;
 	width:30%;
 	-moz-border-radius-topleft: 0px;
@@ -692,6 +697,9 @@ footer#colophon .widget ul li {
 	margin:.5em 0;
 	line-height:1.2em;
 	color:#E4DEDC;
+}
+.home .entry-title{
+	clear: both;
 }
 .entry-content h2{
 	font-size:1.5em;
@@ -1418,16 +1426,18 @@ body.single-product .post-meta span{
 	.contact-info tel{
 		font-weight: bold;
 	}
-	header.top-bar nav{
+	header .top-bar nav{
 		width:69%;
 		float:left;
 		text-align: right;-webkit-border-radius: 0 8px 8px 0;    
 		border-radius: 0 8px 8px 0;
+		background-color: rgba(0,0,0,.1);
+		margin-bottom:1em;
 	}
 	.home #sidebar .widget{
-		width:31.3%;
+		width: 31.3%;
 		margin: 2% 2% 2% 0;
-		float:left;
+		float: left;
 	}
 	#sidebar .widget{
 		margin:0 0 7% 5%;
