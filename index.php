@@ -2,8 +2,8 @@
 
 <main id="content">
 	<?php //THE LOOP
-		if( have_posts() ): ?>
-		<?php while( have_posts() ): the_post(); ?>
+		if( have_posts() ){ ?>
+		<?php while( have_posts() ){ the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" >
 			<h2 class="entry-title"> 
@@ -23,13 +23,13 @@
 			</div><!-- end postmeta -->			
 		</article><!-- end post -->
 
-		<?php endwhile; ?>
-	<?php else: ?>
+		<?php } //end while ?>
+	<?php }else{ ?>
 
 	<h2>Sorry, no posts found</h2>
 	<p>Try using the search bar instead</p>
 
-	<?php endif;  //end THE LOOP ?>
+	<?php }  //end THE LOOP ?>
 
 </main><!-- end #content -->
 

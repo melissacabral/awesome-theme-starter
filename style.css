@@ -1,13 +1,13 @@
 /*
-Theme Name: Awesome Co
+Theme Name: Awesome Theme
 Theme URI: https://github.com/melissacabral/awesomeco
 Description: A theme for learning!
 Author: melissa cabral
 Author URI: http://melissacabral.com
 Version: 1.0
-License: GPLv2 
+License: GPLv3
 License URI: license.txt
-Tags:gray, two-columns
+Tags: two-columns
 ------------------------------
 	Table of Contents
 ------------------------------
@@ -745,7 +745,7 @@ footer#colophon .widget ul li {
 .hentry div, .hentry p{
 	max-width:100%;
 }
-.hentry .thumb {
+.hentry .wp-post-image {
 	float:left;
 	margin: 0 1em 1em 0;
 	position:relative;
@@ -884,7 +884,7 @@ blockquote blockquote {
 	text-align:right;
 	margin-top:.25em;
 }
-.format-quote .thumb,
+.format-quote .wp-post-image,
 .format-quote .postmeta,
 .format-quote .entry-title {
 	display:none;
@@ -1253,9 +1253,9 @@ RSS Feed Image
 	text-align:center;
 	clear:none;
 }
-.post-type-archive-product .thumbnail,
-.tax-brand .thumbnail,
-.tax-feature .thumbnail{
+.post-type-archive-product .wp-post-image,
+.tax-brand .wp-post-image,
+.tax-feature .wp-post-image{
 	width:auto;
 	margin:0;
 	padding:0;
@@ -1354,9 +1354,9 @@ body.single-product .post-meta span{
 .tax-feature .entry-content{
 	margin-left:0;
 }
-.post-type-archive-product .thumb,
-.tax-brand .thumb,
-.tax-feature .thumb{
+.post-type-archive-product .wp-post-image,
+.tax-brand .wp-post-image,
+.tax-feature .wp-post-image{
 	float:none;
 	margin:0;
 }
